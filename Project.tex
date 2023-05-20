@@ -1,0 +1,66 @@
+\documentclass[12pt, a4paper, oneside]{ctexbook}
+\usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs}
+
+
+% 标题，作者，时间
+\title{{\Huge{\textbf{高等数学}}}\\——P1}
+\author{qiu}
+\date{\today}
+
+% 定理，定义，引理，推论，命题，例
+\linespread{1.5}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{definition}[theorem]{定义}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\newtheorem{example}[theorem]{例}
+\newtheorem{proposition}[theorem]{命题}
+
+
+% 文章主体
+\begin{document}
+
+
+% 编译标题
+\maketitle
+
+
+\pagenumbering{roman}
+% 一个新页/前言
+\setcounter{page}{1}
+\begin{center}
+    \Huge\textbf{前言}
+\end{center}~\
+
+数学是描绘世界的语言
+~\\
+
+% 作者
+\begin{flushright}
+    \begin{tabular}{c}
+        qiu\\
+        \today
+    \end{tabular}
+\end{flushright}
+
+
+% 章节目录
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+
+% 正文
+\chapter{章节标题}
+
+在这里可以输入笔记的内容. 
+
+\section{小节标题}
+
+这是笔记的正文部分. 
+
+\end{document}
